@@ -29,6 +29,30 @@ git config --global user.name “用户名”
 
 git config --global user.email “邮箱”
 
+这步必须要做，要不然都不知道本地是谁提交的，相当于设置谁在工作！
+
 \#git 自动记住用户和密码操作
 
 git config --global credential.helper store
+
+# 仓库快速建立关联
+
+## 将新仓库与git空仓库建立关联
+
+```
+echo "# environmentBuild" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/zeliCodeLife/environmentBuild.git
+git push -u origin master
+```
+
+## 与已有仓库建立关联
+```
+git remote add origin https://github.com/zeliCodeLife/environmentBuild.git
+git push -u origin master
+```
+
+
+

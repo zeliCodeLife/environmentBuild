@@ -56,3 +56,8 @@ git push -u origin master
 
 
 
+# github设置ssh公钥
+
+1. 右上角setting--ssh and gpg keys----new ssh keys
+
+2. cat ~/.ssh/id_rsa.pub   将内容复制过去即可

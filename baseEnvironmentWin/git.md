@@ -21,6 +21,8 @@ https://git-scm.com/   根据pc的位数选择合适的版本，这里以64位�
 
 4、拷贝id_rsa.pub 内容至服务器端   ~/.ssh/authorized_keys 中
 
+测试
+
 # 4.Git配置
 
 \#Git安装完之后，需做最后一步配置。打开git bash，分别执行以下两句命令

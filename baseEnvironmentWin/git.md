@@ -15,7 +15,7 @@ https://git-scm.com/   根据pc的位数选择合适的版本，这里以64位�
 
 1、打开git bash
 
-2、执行生成公钥和私钥的命令：ssh-keygen -t rsa 并按回车3下
+2、执行生成公钥和私钥的命令：ssh-keygen -t rsa -C "your_email@example.com" 并按回车3下
 
 3、执行查看公钥的命令：cat ~/.ssh/id_rsa.pub 
 
@@ -48,13 +48,13 @@ echo "# environmentBuild" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/zeliCodeLife/environmentBuild.git
+git remote add origin git@github.com:zeliCodeLife/environmentBuild.git
 git push -u origin master
 ```
 
 ## 5.2与已有仓库建立关联
 ```
-git remote add origin https://github.com/zeliCodeLife/environmentBuild.git
+git remote add origin git@github.com:zeliCodeLife/environmentBuild.git
 git push -u origin master
 ```
 
